@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -14,10 +15,17 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         {/* Profile picture */}
         <div className="mb-8">
-          <div className={`w-32 h-32 mx-auto rounded-full bg-white/20 backdrop-blur-sm border-4 border-white/30 flex items-center justify-center transition-all duration-500 ${
+          <div className={`w-32 h-32 mx-auto rounded-full bg-white/20 backdrop-blur-sm border-4 border-white/30 overflow-hidden transition-all duration-500 ${
             isLoaded ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
           }`}>
-            <span className="text-3xl font-bold text-white">DL</span>
+            <Image
+              src="/Profil.jpg"
+              alt="Dan LAINE"
+              width={128}
+              height={128}
+              className="w-full h-full object-cover"
+              priority
+            />
           </div>
         </div>
 
