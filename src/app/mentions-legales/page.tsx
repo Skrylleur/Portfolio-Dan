@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function MentionsLegales() {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
@@ -60,7 +62,7 @@ export default function MentionsLegales() {
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Cookies</h2>
               <div className="space-y-2">
                 <p>Ce site n&apos;utilise pas de cookies de tracking ou de publicité. Seuls des cookies techniques peuvent être utilisés pour le bon fonctionnement du site.</p>
-                <p>Pour plus d&apos;informations, consultez notre <a href="/politique-confidentialite" className="text-[#1e4d2b] hover:underline">politique de confidentialité</a>.</p>
+                <p>Pour plus d&apos;informations, consultez notre <Link href="/politique-confidentialite" className="text-[#1e4d2b] hover:underline">politique de confidentialité</Link>.</p>
               </div>
             </section>
 
@@ -88,12 +90,12 @@ export default function MentionsLegales() {
 
           {/* Retour */}
           <div className="mt-12 pt-8 border-t border-gray-200">
-            <a 
+            <Link 
               href="/" 
               className="inline-flex items-center text-[#1e4d2b] hover:underline"
             >
               ← Retour à l&apos;accueil
-            </a>
+            </Link>
           </div>
         </div>
       </div>

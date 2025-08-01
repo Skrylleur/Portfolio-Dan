@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function PolitiqueConfidentialite() {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
@@ -11,8 +13,8 @@ export default function PolitiqueConfidentialite() {
             <section>
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Introduction</h2>
               <div className="space-y-2">
-                <p>Cette politique de confidentialité décrit comment Dan LAINE collecte, utilise et protège vos informations personnelles lorsque vous visitez ce portfolio.</p>
-                <p>Nous nous engageons à protéger votre vie privée et à être transparents sur nos pratiques de collecte de données.</p>
+                <p>Cette politique de confidentialité décrit comment Dan LAINE collecte, utilise et protège vos informations personnelles lorsque vous utilisez ce portfolio.</p>
+                <p>Nous nous engageons à protéger votre vie privée et à traiter vos données personnelles de manière transparente et responsable.</p>
               </div>
             </section>
 
@@ -30,33 +32,30 @@ export default function PolitiqueConfidentialite() {
             {/* Données collectées */}
             <section>
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Données Collectées</h2>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Données de navigation</h3>
-                  <p>Lors de votre visite sur ce site, nous ne collectons aucune donnée personnelle. Aucun cookie de tracking n&apos;est utilisé.</p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Formulaire de contact</h3>
-                  <p>Si vous utilisez le formulaire de contact, les données suivantes peuvent être collectées :</p>
-                  <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                    <li>Nom</li>
-                    <li>Adresse email</li>
-                    <li>Message</li>
-                  </ul>
-                </div>
+              <div className="space-y-2">
+                <p><strong>Important :</strong> Ce site ne collecte aucune donnée personnelle automatiquement.</p>
+                <p>Les seules données que nous pouvons recevoir sont celles que vous choisissez de nous envoyer via le formulaire de contact :</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li>Nom</li>
+                  <li>Adresse email</li>
+                  <li>Sujet du message</li>
+                  <li>Contenu du message</li>
+                </ul>
+                <p>Ces données ne sont collectées que si vous décidez de nous contacter.</p>
               </div>
             </section>
 
-            {/* Finalité du traitement */}
+            {/* Finalité */}
             <section>
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Finalité du Traitement</h2>
               <div className="space-y-2">
                 <p>Les données collectées via le formulaire de contact sont utilisées uniquement pour :</p>
-                <ul className="list-disc list-inside ml-4 space-y-1">
+                <ul className="list-disc list-inside space-y-1 ml-4">
                   <li>Répondre à votre demande de contact</li>
-                  <li>Échanger concernant une opportunité d&apos;alternance</li>
-                  <li>Améliorer le service proposé</li>
+                  <li>Traiter votre candidature ou demande d&apos;information</li>
+                  <li>Maintenir une relation professionnelle</li>
                 </ul>
+                <p>Aucune donnée n&apos;est utilisée à des fins commerciales ou marketing.</p>
               </div>
             </section>
 
@@ -64,21 +63,22 @@ export default function PolitiqueConfidentialite() {
             <section>
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Base Légale</h2>
               <div className="space-y-2">
-                <p>Le traitement de vos données est fondé sur :</p>
-                <ul className="list-disc list-inside ml-4 space-y-1">
-                  <li><strong>L&apos;intérêt légitime</strong> : pour répondre à vos demandes de contact</li>
-                  <li><strong>Le consentement</strong> : lorsque vous soumettez volontairement le formulaire</li>
+                <p>Le traitement de vos données personnelles est fondé sur :</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li>Votre consentement explicite lors de l&apos;envoi du formulaire</li>
+                  <li>L&apos;intérêt légitime pour répondre à votre demande</li>
                 </ul>
               </div>
             </section>
 
-            {/* Conservation des données */}
+            {/* Conservation */}
             <section>
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Conservation des Données</h2>
               <div className="space-y-2">
                 <p>Vos données personnelles sont conservées :</p>
-                <ul className="list-disc list-inside ml-4 space-y-1">
-                  <li><strong>3 ans maximum</strong> après le dernier contact</li>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li>Le temps nécessaire pour traiter votre demande</li>
+                  <li>Maximum 2 ans après le dernier contact</li>
                   <li>Ou jusqu&apos;à votre demande de suppression</li>
                 </ul>
               </div>
@@ -88,36 +88,36 @@ export default function PolitiqueConfidentialite() {
             <section>
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Destinataires des Données</h2>
               <div className="space-y-2">
-                <p>Vos données ne sont partagées qu&apos;avec :</p>
-                <ul className="list-disc list-inside ml-4 space-y-1">
+                <p>Vos données ne sont accessibles qu&apos;à :</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
                   <li>Dan LAINE (responsable du traitement)</li>
-                  <li>L&apos;hébergeur Netlify (données techniques uniquement)</li>
+                  <li>Formspree (service de traitement des formulaires)</li>
                 </ul>
-                <p>Aucune donnée n&apos;est vendue, louée ou partagée avec des tiers à des fins commerciales.</p>
+                <p>Aucune donnée n&apos;est vendue, louée ou partagée avec des tiers.</p>
               </div>
             </section>
 
-            {/* Vos droits */}
+            {/* Droits utilisateur */}
             <section>
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Vos Droits</h2>
               <div className="space-y-2">
                 <p>Conformément au RGPD, vous disposez des droits suivants :</p>
-                <ul className="list-disc list-inside ml-4 space-y-1">
-                  <li><strong>Droit d&apos;accès</strong> : connaître les données vous concernant</li>
-                  <li><strong>Droit de rectification</strong> : corriger des données inexactes</li>
-                  <li><strong>Droit à l&apos;effacement</strong> : demander la suppression de vos données</li>
-                  <li><strong>Droit à la portabilité</strong> : récupérer vos données</li>
-                  <li><strong>Droit d&apos;opposition</strong> : refuser le traitement</li>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Droit d&apos;accès :</strong> Connaître les données vous concernant</li>
+                  <li><strong>Droit de rectification :</strong> Corriger des données inexactes</li>
+                  <li><strong>Droit à l&apos;effacement :</strong> Demander la suppression de vos données</li>
+                  <li><strong>Droit à la portabilité :</strong> Récupérer vos données</li>
+                  <li><strong>Droit d&apos;opposition :</strong> Vous opposer au traitement</li>
                 </ul>
               </div>
             </section>
 
-            {/* Exercer vos droits */}
+            {/* Exercice des droits */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Exercer Vos Droits</h2>
+              <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Exercice de vos Droits</h2>
               <div className="space-y-2">
                 <p>Pour exercer vos droits, contactez-nous :</p>
-                <ul className="list-disc list-inside ml-4 space-y-1">
+                <ul className="list-disc list-inside space-y-1 ml-4">
                   <li>Par email : dan.laine.contact@gmail.com</li>
                   <li>Par téléphone : 07 49 17 43 59</li>
                 </ul>
@@ -129,12 +129,11 @@ export default function PolitiqueConfidentialite() {
             <section>
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Sécurité</h2>
               <div className="space-y-2">
-                <p>Nous mettons en place des mesures techniques et organisationnelles appropriées pour protéger vos données contre :</p>
-                <ul className="list-disc list-inside ml-4 space-y-1">
-                  <li>L&apos;accès non autorisé</li>
-                  <li>La divulgation accidentelle</li>
-                  <li>La perte ou destruction</li>
-                  <li>L&apos;altération</li>
+                <p>Nous mettons en place des mesures de sécurité appropriées pour protéger vos données :</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li>Chiffrement des données en transit (HTTPS)</li>
+                  <li>Accès restreint aux données</li>
+                  <li>Surveillance des accès</li>
                 </ul>
               </div>
             </section>
@@ -143,8 +142,13 @@ export default function PolitiqueConfidentialite() {
             <section>
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Cookies</h2>
               <div className="space-y-2">
-                <p>Ce site n&apos;utilise pas de cookies de tracking ou de publicité. Seuls des cookies techniques peuvent être utilisés pour le bon fonctionnement du site.</p>
-                <p>Pour plus d&apos;informations, consultez notre <a href="/cookies" className="text-[#1e4d2b] hover:underline">page de gestion des cookies</a>.</p>
+                <p>Ce site n&apos;utilise que des cookies techniques nécessaires au fonctionnement :</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li>Aucun cookie de tracking</li>
+                  <li>Aucun cookie publicitaire</li>
+                  <li>Aucun cookie de réseaux sociaux</li>
+                </ul>
+                <p>Pour plus d&apos;informations, consultez notre <Link href="/cookies" className="text-[#1e4d2b] hover:underline">gestion des cookies</Link>.</p>
               </div>
             </section>
 
@@ -152,8 +156,8 @@ export default function PolitiqueConfidentialite() {
             <section>
               <h2 className="text-2xl font-semibold text-[#1e4d2b] mb-4">Modifications</h2>
               <div className="space-y-2">
-                <p>Cette politique de confidentialité peut être mise à jour. La version la plus récente sera toujours disponible sur cette page.</p>
-                <p>Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}</p>
+                <p>Cette politique peut être mise à jour. La version la plus récente sera toujours disponible sur cette page.</p>
+                <p>Dernière mise à jour : Janvier 2025</p>
               </div>
             </section>
 
@@ -161,12 +165,12 @@ export default function PolitiqueConfidentialite() {
 
           {/* Retour */}
           <div className="mt-12 pt-8 border-t border-gray-200">
-            <a 
+            <Link 
               href="/" 
               className="inline-flex items-center text-[#1e4d2b] hover:underline"
             >
               ← Retour à l&apos;accueil
-            </a>
+            </Link>
           </div>
         </div>
       </div>
