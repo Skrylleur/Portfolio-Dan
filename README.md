@@ -145,6 +145,10 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👨‍💻 Auteur
 
+**Antonin Gourinchas**
+- 💻 Portfolio : https://gourinchas.com
+- 📍 Localisation : Caen, Normandie
+  
 **Dan LAINE**
 - 📧 Email : dan.laine.contact@gmail.com
 - 📱 Téléphone : 07 49 17 43 59
