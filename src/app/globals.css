@@ -38,17 +38,17 @@
   :root {
     --background: #0f172a;
     --foreground: #f8fafc;
-    --primary: #22c55e;
-    --primary-foreground: #0f172a;
-    --secondary: #16a34a;
-    --secondary-foreground: #0f172a;
-    --accent: #15803d;
-    --accent-foreground: #f8fafc;
+    --primary: #1e4d2b;
+    --primary-foreground: #ffffff;
+    --secondary: #2d5a3d;
+    --secondary-foreground: #ffffff;
+    --accent: #3a7c4f;
+    --accent-foreground: #ffffff;
     --muted: #1e293b;
     --muted-foreground: #94a3b8;
     --border: #334155;
     --input: #334155;
-    --ring: #22c55e;
+    --ring: #1e4d2b;
   }
 }
 
